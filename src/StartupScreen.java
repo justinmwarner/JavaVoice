@@ -89,10 +89,6 @@ public class StartupScreen {
 	}
 
 	public User getInfo() {
-		while (!isLogin) {
-			// Wait for login push.
-			System.out.println("Waiting....");
-		}
 		return new User(tfEmail.getText(), tfPass.getText());
 	}
 

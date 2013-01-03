@@ -17,6 +17,12 @@ public class LinuxVoiceApp {
 		System.out.println("Start");
 		StartupScreen ss = new StartupScreen();
 		while (!ss.isLogin) {
+			try {
+				Thread.sleep(1000);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 		}
 		System.out.println("Entered info: " + ss.toString());
 		User user = ss.getInfo();// new User("bodyid@gmail.com",
