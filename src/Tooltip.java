@@ -40,6 +40,8 @@ public class Tooltip {
 			@Override
 			public void actionPerformed(final ActionEvent e) {
 				frame.dispose();
+
+
 			}
 		});
 
